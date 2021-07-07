@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+:root {
+    --main-background: hsl(233, 47%, 7%);
+    --card-background: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --main-heading: hsl(0, 0%, 100%);
+    --stats: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-headings: hsla(0, 0%, 100%, 0.6);
+    /* font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif; */
+}
+
+html {
+    background-color: var(--main-background);
+    min-width: 375px;
+}
+
+.capitalize {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.attribution {
+    text-align: center;
+    color: var( --stat-headings);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    background-color: var(--card-background);
+    height: 82%;
+    width: 85%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cover-img {
+    background-image: url(/images/image-header-mobile.jpg);
+    background-color: var(--accent);
+    background-size: cover;
+    height: calc(35%);
+    border-radius: 10px 10px 0 0;
+    background-blend-mode: multiply;
+}
+
+.information {
+    text-align: center;
+    height: calc(65%);
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: var(--main-heading);
+}
+
+.title strong {
+    color: var(--accent);
+}
+
+.description {
+    font-family: 'Inter', sans-serif;
+    color: var(--main-paragraph);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.stats {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    margin: 10px;
+}
+
+.stat .head {
+    color: var(--stats);
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.stat .body {
+    color: var(--stat-headings);
+    font-weight: 400;
+    font-size: 11px;
+}
