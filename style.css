@@ -63,7 +63,6 @@ body {
   font-weight: 700;
   font-size: 28px;
   line-height: 32px;
-  text-align: center;
   color: #ffffff;
   margin-top: 8px;
 }
@@ -79,7 +78,6 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  text-align: center;
   color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.75;
@@ -101,10 +99,6 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  /* identical to box height */
-
-  text-align: center;
-
   color: #ffffff;
 }
 
@@ -116,7 +110,6 @@ body {
   line-height: 25px;
   /* identical to box height, or 208% */
 
-  text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
 
@@ -132,7 +125,6 @@ body {
 
 .attribution {
   font-size: 15px;
-  text-align: center;
   color: var(--White);
   position: absolute;
   bottom: 0;
@@ -142,4 +134,64 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1440px) {
+  #content {
+    width: 1110px;
+    height: 446px;
+    flex-direction: row-reverse;
+  }
+  #image {
+    width: 540px;
+    height: 100%;
+  }
+
+  #information {
+    width: 570px;
+    height: 100%;
+    padding: 71px 95px 71px 72px;
+    margin: 0;
+    text-align: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  #information h1 {
+    margin: 0px;
+    margin-bottom: 25px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  #information h3 {
+    width: 374px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;  
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    margin: 0px;
+    margin-bottom: 72px;
+
+  }
+
+
+  #information #stats{
+    flex-direction: row;
+  }
+
+  .center-stat {
+    margin: 0px 0px;
+    margin-left: 63px;
+    margin-right: 60px
+  }
+  
 }
