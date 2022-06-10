@@ -131,6 +131,7 @@ body {
   padding-bottom: 1em;
   width: 100%;
   font-weight: 400;
+  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
